@@ -22,9 +22,20 @@ public class ContaTerminal {
                 return;
             }
             
-            System.out.println("Olá, " + clientName+ ", obrigada por criar uma conta em nosso banco, sua agência é " + branchNumber + ", conta " + accountNumber + ", e seu saldo R$" + balance + " já está disponível para saque.");
+            String message = "Olá, "
+            .concat(clientName)
+            .concat(". Obrigado por criar uma conta em nosso banco! Sua agência é ")
+            .concat(branchNumber)
+            .concat(", conta ")
+            .concat(String.valueOf(accountNumber))
+            .concat(", e seu saldo R$")
+            .concat(String.valueOf(balance))
+            .concat(" já está disponível para saque.");
+            
+            System.out.println(message);
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e.getMessage());
+            System.out.println("Certifique-se de digitar o seu saldo em um dos seguinter formatos: 1250 ou 1250,45. Não utilize ponto final.");
         }
     }
 }
