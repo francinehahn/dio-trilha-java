@@ -1,2 +1,2 @@
 # dio-trilha-java
-This is a repository that contains all the exercises and projects proposed by dio in the java bootcamp
+Esse repositório contém todos os exercícios e projetos propostos pelo Digital Innovation One (DIO) no bootcamp de Java
