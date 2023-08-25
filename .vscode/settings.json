@@ -1,8 +1,9 @@
 {
     "java.project.sourcePaths": [
         "teste",
+        "list/Pesquisa",
         "list/OperacoesBasicas",
         "controle-fluxo/src",
-        "list/Pesquisa"
+        "list/Ordenacao"
     ]
 }
