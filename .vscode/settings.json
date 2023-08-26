@@ -1,12 +1,14 @@
 {
     "java.project.sourcePaths": [
         "set/Pesquisa",
+        "set/Ordenacao/GerenciadorAlunos",
         "set/Ordenacao/CadastroProdutos",
         "set/OperacoesBasicas",
+        "map/AgendaContatos",
         "list/Pesquisa",
         "list/Ordenacao",
         "list/OperacoesBasicas",
         "controle-fluxo/src",
-        "set/Ordenacao/GerenciadorAlunos"
+        "map/OperacoesBasicas/Dicionario"
     ]
 }
