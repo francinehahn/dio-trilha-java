@@ -1,3 +1,4 @@
+package OrdenacaoPessoas;
 import java.util.Comparator;
 
 //Comparable -> ordenação padrão
