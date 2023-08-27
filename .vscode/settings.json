@@ -5,6 +5,8 @@
         "set/Ordenacao/CadastroProdutosSet",
         "set/OperacoesBasicas",
         "map/Pesquisa/EstoqueProdutos",
+        "map/Pesquisa/ContagemPalavras",
+        "map/Ordenacao/AgendaEventos",
         "map/OperacoesBasicas/Dicionario",
         "map/OperacoesBasicas/AgendaContatos",
         "map/AgendaContatos",
@@ -12,6 +14,6 @@
         "list/Ordenacao",
         "list/OperacoesBasicas",
         "controle-fluxo/src",
-        "map/Pesquisa/ContagemPalavras"
+        "map/Ordenacao/LivrariaOnline"
     ]
 }
