@@ -1,10 +1,10 @@
 package Tarefas;
 
-public class Tarefa {
+public class TarefaSet {
    private String descricao;
    private boolean concluida;
 
-   public Tarefa(String descricao) {
+   public TarefaSet(String descricao) {
       this.descricao = descricao;
       this.concluida = false;
    }

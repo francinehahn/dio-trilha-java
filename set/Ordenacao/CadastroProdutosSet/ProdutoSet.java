@@ -1,12 +1,12 @@
 import java.util.Comparator;
 
-public class Produto implements Comparable<Produto> {
+public class ProdutoSet implements Comparable<ProdutoSet> {
     private String nome;
     private Long codigo; 
     private double preço;
     private int quantidade;
     
-    public Produto(String nome, Long codigo, double preço, int quantidade) {
+    public ProdutoSet(String nome, Long codigo, double preço, int quantidade) {
         this.nome = nome;
         this.codigo = codigo;
         this.preço = preço;
@@ -14,7 +14,7 @@ public class Produto implements Comparable<Produto> {
     }
 
     @Override
-    public int compareTo(Produto p) {
+    public int compareTo(ProdutoSet p) {
         return nome.compareToIgnoreCase(p.getNome());
     }
 
@@ -35,7 +35,7 @@ public class Produto implements Comparable<Produto> {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Produto other = (Produto) obj;
+        ProdutoSet other = (ProdutoSet) obj;
         if (codigo == null) {
             if (other.codigo != null)
                 return false;
@@ -66,9 +66,9 @@ public class Produto implements Comparable<Produto> {
     }
 }
 
-class ComparatorPorPreco implements Comparator<Produto> {
+class ComparatorPorPreco implements Comparator<ProdutoSet> {
     @Override
-    public int compare(Produto p1, Produto p2) {
+    public int compare(ProdutoSet p1, ProdutoSet p2) {
         return Double.compare(p1.getPreço(), p2.getPreço());
     }
 }

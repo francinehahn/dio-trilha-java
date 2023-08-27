@@ -4,19 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListaTarefa {
-    private List<Tarefa> tarefaList;
+    private List<TarefaSet> tarefaList;
 
     public ListaTarefa() {
         this.tarefaList = new ArrayList<>();
     }
 
     public void adicionarTarefa(String descricao) {
-        tarefaList.add(new Tarefa(descricao));
+        tarefaList.add(new TarefaSet(descricao));
     }
 
     public void removerTarefa(String descricao) {
-        List<Tarefa> tarefasParaRemover = new ArrayList<>();
-        for (Tarefa tarefa : tarefaList) {
+        List<TarefaSet> tarefasParaRemover = new ArrayList<>();
+        for (TarefaSet tarefa : tarefaList) {
             if(tarefa.getDescricao().equalsIgnoreCase(descricao)) {
                 tarefasParaRemover.add(tarefa);
             }

@@ -3,19 +3,19 @@ package Tarefas;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ListaDeTarefas {
-    private Set<Tarefa> listaDeTarefas;
+public class ListaDeTarefasSet {
+    private Set<TarefaSet> listaDeTarefas;
 
-    public ListaDeTarefas() {
+    public ListaDeTarefasSet() {
         this.listaDeTarefas = new HashSet<>();
     }
 
     public void adicionarTarefa(String descricao) {
-        this.listaDeTarefas.add(new Tarefa(descricao));
+        this.listaDeTarefas.add(new TarefaSet(descricao));
     }
 
     public void removerTarefa(String descricao) {
-        for (Tarefa tarefa : listaDeTarefas) {
+        for (TarefaSet tarefa : listaDeTarefas) {
             if (tarefa.getDescricao().equalsIgnoreCase(descricao)) {
                 listaDeTarefas.remove(tarefa);
                 break;
@@ -31,10 +31,10 @@ public class ListaDeTarefas {
         return listaDeTarefas.size();
     }
 
-    public Set<Tarefa> obterTarefasConcluidas() {
-        Set<Tarefa> tarefasConcluidas = new HashSet<>();
+    public Set<TarefaSet> obterTarefasConcluidas() {
+        Set<TarefaSet> tarefasConcluidas = new HashSet<>();
 
-        for (Tarefa tarefa : listaDeTarefas) {
+        for (TarefaSet tarefa : listaDeTarefas) {
             if (tarefa.getConcluida()) {
                 tarefasConcluidas.add(tarefa);
             }
@@ -43,10 +43,10 @@ public class ListaDeTarefas {
         return tarefasConcluidas;
     }
 
-    public Set<Tarefa> obterTarefasPendentes() {
-        Set<Tarefa> tarefasPendentes = new HashSet<>();
+    public Set<TarefaSet> obterTarefasPendentes() {
+        Set<TarefaSet> tarefasPendentes = new HashSet<>();
 
-        for (Tarefa tarefa : listaDeTarefas) {
+        for (TarefaSet tarefa : listaDeTarefas) {
             if (!tarefa.getConcluida()) {
                 tarefasPendentes.add(tarefa);
             }
@@ -56,7 +56,7 @@ public class ListaDeTarefas {
     }
 
     public void marcarTarefaConcluida(String descricao) {
-        for (Tarefa tarefa : listaDeTarefas) {
+        for (TarefaSet tarefa : listaDeTarefas) {
             if (tarefa.getDescricao().equalsIgnoreCase(descricao)) {
                 tarefa.setConcluida(true);
                 break;
@@ -65,7 +65,7 @@ public class ListaDeTarefas {
     }
 
     public void marcarTarefaPendente(String descricao) {
-        for (Tarefa tarefa : this.listaDeTarefas) {
+        for (TarefaSet tarefa : this.listaDeTarefas) {
             if (tarefa.getDescricao().equalsIgnoreCase(descricao)) {
                 tarefa.setConcluida(false);
                 break;
@@ -78,7 +78,7 @@ public class ListaDeTarefas {
     }
 
     public static void main(String[] args) {
-        ListaDeTarefas listaDeTarefas = new ListaDeTarefas();
+        ListaDeTarefasSet listaDeTarefas = new ListaDeTarefasSet();
         listaDeTarefas.adicionarTarefa("Caminhar com cachorro");
         listaDeTarefas.adicionarTarefa("Ir para a academia");
         listaDeTarefas.adicionarTarefa("Lavar a louça");
