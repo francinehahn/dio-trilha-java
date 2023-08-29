@@ -1,6 +1,3 @@
-import java.util.Arrays;
-import java.util.List;
-
 public class Desafio16 {
     public void calcularFatorial(int num) {
         if (num < 1) {
