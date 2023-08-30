@@ -15,6 +15,7 @@
         "list/Ordenacao",
         "list/OperacoesBasicas",
         "controle-fluxo/src",
-        "stream-api"
+        "stream-api",
+        "uml/src"
     ]
 }
