@@ -12,5 +12,5 @@ Minutos relevantes do 00:15 até 00:55
 - Aparelho Telefônico: ligar, atender, iniciarCorrerioVoz
 - Navegador na Internet: exibirPagina, adicionarNovaAba, atualizarPagina
 
-### Link para acessar o diagrama
-https://app.diagrams.net/#Hfrancinehahn%2Fdio-trilha-java%2Fmain%2Fuml%2Fdesafio-iphone-dio.drawio
+### Diagrama
+![Imagem-diagrama](desafio-iphone-dio.drawio.png);
